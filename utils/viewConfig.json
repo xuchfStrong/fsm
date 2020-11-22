@@ -1,0 +1,167 @@
+{
+  "version": 113,
+  "switchConfig": [
+    {"label": "自动升级聚灵池", "key": "is_shengji_lingchi"},
+    {"label": "自动招募", "key": "is_zhaomu"},
+    {"label": "自动炼丹", "key": "is_liandan"},
+    {"label": "自动炼器", "key": "is_lianqi"},
+    {"label": "自动练气主宰", "key": "is_lianqi_zhuzai"},
+    {"label": "自动妖帝来袭", "key": "is_yaodilaixi"},
+    {"label": "自动仙帝之路", "key": "is_xiandi_zhilu"},
+    {"label": "自动斗法", "key": "is_doufa"},
+    {"label": "自动日常", "key": "is_richang"},
+    {"label": "自动魔族降临", "key": "is_mozujianglin"},
+    {"label": "自动宗门禁地", "key": "is_zongmen_jindi"}
+  ],
+  "pickerSwitchConfig": [
+    {"label": "自动历练", "key": "lilian_type"},
+    {"label": "自动宗门建设", "key": "zongmen_jianshe_type"},
+    {"label": "自动开采遗迹", "key": "caiji_require_id"},
+    {"label": "决战魔殿", "key": "moyu_type"}
+  ],
+  "gameInfoConfig": [
+    {"label": "角色信息", "key": "roleInfoConfig"},
+    {"label": "任务信息", "key": "taskInfoConfig"}
+  ],
+  "roleInfoConfig": [
+    {"label": "境界：", "key": "role_level"},
+    {"label": "仙帝排名：", "key": "xiandizhilu_pos"},
+    {"label": "VIP等级：", "key": "vip_level"},
+    {"label": "战力：", "key": "zhanli"},
+    {"label": "主宰层数：", "key": "zhuzai_level"},
+    {"label": "关卡通关：", "key": "guanqia"},
+    {"label": "仙缘：", "key": "xianyuan"},
+    {"label": "登录天数：", "key": "login_days"},
+    {"label": "修为：", "key": "xiuwei"},
+    {"label": "灵币：", "key": "lingbi"}
+  ],
+  "taskInfoConfig": [
+    {"label": "魔族降临：", "key": "mozujianglin_times"},
+    {"label": "遗迹开采：", "key": "yijikaicai_times"},
+    {"label": "遗迹进攻：", "key": "yijijingong_times"},
+    {"label": "仙帝次数：", "key": "xiandizhilu_times"},
+    {"label": "斗法次数：", "key": "doufa_times"},
+    {"label": "宗门建设：", "key": "zongmenjianshe_times"},
+    {"label": "宗门禁地：", "key": "zongmenjindi_times"},
+    {"label": "魔殿次数：", "key": "juezhanmodian_times"}
+  ],
+  "weimianInfoConfig": [
+    {"label": "兵力：", "key": "weimian_bingli"},
+    {"label": "攻击令：", "key": "weimian_gongjiling"},
+    {"label": "食物：", "key": "weimian_shiwu"},
+    {"label": "位置：", "key": "weimian_weizhi"}
+  ],
+  "gongfaConfig": [
+    {"label": "攻击", "key": "gongji"},
+    {"label": "生命", "key": "shengming"},
+    {"label": "物防", "key": "wufang"},
+    {"label": "法防", "key": "fafang"},
+    {"label": "残页", "key": "canye"},
+    {"label": "绝学", "key": "juexue"}
+  ],
+  "gongfaIndex": {
+    "gongji": 0,
+    "shengming": 0,
+    "wufang": 0,
+    "fafang": 0,
+    "canye": 0,
+    "juexue": 0
+  },
+  "configInfoDefault": {
+    "gongfagoumai": "",
+    "lixianbeishu": 1,
+    "is_shengji_lingchi": 0,
+    "is_zhaomu": 1,
+    "is_liandan": 0,
+    "is_lianqi": 0,
+    "is_lianqi_zhuzai": 0,
+    "is_yaodilaixi": 1,
+    "is_xiandi_zhilu": 1,
+    "is_doufa": 0,
+    "is_richang": 0,
+    "is_mozujianglin": 1,
+    "is_zongmen_jindi": 0,
+    "lilian_type": 0,
+    "zongmen_jianshe_type": 0,
+    "caiji_require_id": 0,
+    "moyu_type": 0
+  },
+  "roleInfoDefault": {
+    "userid": "",
+    "server_id": "",
+    "on_off": 0,
+    "fuzhu_vip": 0,
+    "end_time": "",
+    "update_time": "",
+    "role_name": "",
+    "role_level": "",
+    "vip_level": "",
+    "zhanli": "",
+    "xianyuan": "",
+    "guanqia": "",
+    "zhuzai_level": "",
+    "mozujianglin_times": "",
+    "yijikaicai_times": "",
+    "yijijingong_times": "",
+    "xiandizhilu_times": "",
+    "doufa_times": "",
+    "xiandizhilu_pos": "",
+    "zongmenjianshe_times": "",
+    "zongmenjindi_times": "",
+    "juezhanmodian_times": "",
+    "charge_value": "",
+    "xiuwei": "",
+    "lingbi": ""
+  },
+  "options": {
+    "lilian_type": [
+      {"value": 0,"text": "关闭自动历练"},
+      {"value": 1,"text": "赤炎山"},
+      {"value": 2,"text": "星月楼"},
+      {"value": 3,"text": "天书碑"},
+      {"value": 4,"text": "天元道"},
+      {"value": 5,"text": "金乌观"},
+      {"value": 6,"text": "玄玉门"},
+      {"value": 7,"text": "雷音界"},
+      {"value": 8,"text": "惊龙渊"},
+      {"value": 9,"text": "无影谷"},
+      {"value": 10,"text": "青云崖"},
+      {"value": 11,"text": "玉女山"},
+      {"value": 12,"text": "赤炎谷"},
+      {"value": 13,"text": "黑龙山"},
+      {"value": 14,"text": "望龙谷"},
+      {"value": 15,"text": "盘龙道"},
+      {"value": 16,"text": "魔光界"}, 
+      {"value": 17,"text": "水云道"},
+      {"value": 18,"text": "星陨塔"},
+      {"value": 19,"text": "天罡城"} 
+    ],
+    "zongmen_jianshe_type": [
+      {"value": 0,"text": "关闭自动仙盟建设"},
+      {"value": 1,"text": "仙盟玄级建设"},
+      {"value": 2,"text": "仙盟地级建设"},
+      {"value": 3,"text": "仙盟天级建设"}
+    ],
+    "caiji_require_id": [
+      {"value": 0,"text": "关闭自动遗迹采集"},
+      {"value": 1,"text": "采集最低要求白色"},
+      {"value": 2,"text": " 采集最低要求蓝色"},
+      {"value": 3,"text": " 采集最低要求紫色"},
+      {"value": 3,"text": " 采集最低要求橙色"}
+    ],
+    "moyu_type": [
+      {"value": 0,"text": "关闭自动决战魔殿"},
+      {"value": 1,"text": "魔族屠夫"},
+      {"value": 2,"text": "魔族夫人"},
+      {"value": 3,"text": "魔族统领"}, 
+      {"value": 4,"text": "魔族将军"},
+      {"value": 5,"text": "魔族大王"},
+      {"value": 6,"text": "魔族战神"},
+      {"value": 7,"text": "魔族魔神"},
+      {"value": 8,"text": "魔族圣女"},
+      {"value": 9,"text": "魔族圣王"},
+      {"value": 10,"text": "魔族圣帝"},
+      {"value": 11,"text": "魔族老祖"}
+    ]
+  }
+}
