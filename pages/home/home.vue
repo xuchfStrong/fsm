@@ -266,7 +266,7 @@ export default {
 			if (numVal < 0) return '未获取到'
       if (numVal > 100000000) {
         return (numVal / 100000000).toFixed(1) + '亿'
-      } else if (numVal > 10000) {
+      } else if (numVal > 1000000) {
         return (numVal / 10000).toFixed(1) + '万'
       } else {
 				return str
