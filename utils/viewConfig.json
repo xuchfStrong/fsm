@@ -1,5 +1,5 @@
 {
-  "version": 115,
+  "version": 116,
   "switchConfig": [
     {"label": "自动升级聚灵池", "key": "is_shengji_lingchi"},
     {"label": "自动招募", "key": "is_zhaomu"},
@@ -53,7 +53,11 @@
     {"label": "斗法次数：", "key": "doufa_times"},
     {"label": "宗门建设：", "key": "zongmenjianshe_times"},
     {"label": "宗门禁地：", "key": "zongmenjindi_times"},
-    {"label": "魔殿次数：", "key": "juezhanmodian_times"}
+    {"label": "魔殿次数：", "key": "juezhanmodian_times"},
+    {"label": "仙兽炼化：", "key": "shenshou_lianhua_times"},
+    {"label": "历练食物：", "key": "lilianshiwu"},
+    {"label": "寻仙问道：", "key": "xunxian_wendao_times"},
+    {"label": "仙兽挑战：", "key": "shenshou_tiaozhan_times"}
   ],
   "weimianInfoConfig": [
     {"label": "兵力：", "key": "weimian_bingli"},
@@ -129,8 +133,12 @@
     "zongmenjindi_times": "",
     "juezhanmodian_times": "",
     "charge_value": "",
+    "lingbi": "",
     "xiuwei": "",
-    "lingbi": ""
+    "shenshou_lianhua_times": "",
+    "shenshou_tiaozhan_times": "",
+    "lilianshiwu": "",
+    "xunxian_wendao_times": ""
   },
   "options": {
     "lilian_type": [

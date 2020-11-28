@@ -115,6 +115,10 @@
 				}
 				getUpdate().then(res => {
 					if (res.viewConfigVersion > viewConfigLocalVersion) {
+						uni.showModal({ //提醒用户有功能更新
+							title: "更新提示",  
+							content: res.viewUpdateNote,    
+						})
 						this.handleGetViewConfig()
 					}
 				})
