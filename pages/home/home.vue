@@ -128,18 +128,6 @@
 			<view class="uni-divider__line"></view>
 		</view>
 		
-		<view class="attr-flex">
-			<view v-for="(item) in viewConfig.roleInfoConfig" :key="item.key" :class="getAttrClass(item.columnSize)">
-				<text>{{ item.label }}</text>
-				<text>{{ roleInfo[item.key] | valueFormatFilter}}</text>
-			</view>
-			<view>
-				<text>VIP经验：</text>
-				<text>{{ notGetChargeValue ? '未获取到':roleInfo.charge_value }}，</text>
-        <text v-if="!notGetChargeValue">还差{{ vipUpValue }}升级到VIP{{ roleInfo.vip_level + 1 }}</text>
-			</view>
-		</view>
-		
 		<view class="uni-divider">
 			<view class="uni-divider__content">活动次数</view>
 			<view class="uni-divider__line"></view>
@@ -230,7 +218,6 @@ import {mapState,mapMutations} from 'vuex'
 import { getValueByIndex, getIndexByValue, getChannel, toast, formatServerList, formatLastServerList } from '@/utils/index'
 import { startGuaji, stopGuaji } from '@/api/game'
 import { getRoleInfo, getConfigInfo, changeConfigInfo, getUtils, loginFuzhu } from '@/api/game'
-import { jingjieMap, weimianMap, vipMap } from './mapData.js'
 import mInput from '../../components/m-input.vue'
 
 export default {
@@ -244,12 +231,6 @@ export default {
         1: '开启'
       }
       return statusMap[status]
-    },
-    jingjieFilter(jingjie) {
-      return jingjieMap[jingjie]
-    },
-    weimianFilter(weimian) {
-      return weimianMap[weimian] || '未获取到位面信息'
     },
     vipStatus(isVip) {
       const map = {
@@ -353,13 +334,6 @@ export default {
     notGetChargeValue() {
       return this.roleInfo.charge_value === -1
     },
-
-    // 计算差多少金额升级到下级VIP
-    vipUpValue() {
-      const netxtVipLevel = this.roleInfo.vip_level + 1
-      const netxtVipValue = vipMap[netxtVipLevel]
-      return netxtVipValue - this.roleInfo.charge_value
-		},
 		
 		// 当前选中的倍数index
 		currentLilianebishu() {
@@ -488,7 +462,7 @@ export default {
 		// 读取记住的登录信息
 		loadLoginInfo() {
 			uni.setNavigationBarTitle({
-					title: '极道神尊火箭辅助V' + this.$global.fuzhuVersionName
+					title: '极道仙尊火箭辅助V' + this.$global.fuzhuVersionName
 			});
 			this.roleList = save.getRoleList()
 			const gameLoginInfo = save.getGameLoginInfo()
@@ -822,7 +796,7 @@ export default {
         userid: this.userInfo.userId,
         server_id: this.userInfo.server,
         pwd_md5: CryptoJS.MD5(this.userInfo.passwordPlatForm).toString(),
-        ... this.configInfo
+        setting_content: this.configInfo
       }
       changeConfigInfo(param).then(res => {
         const code = res.code
@@ -876,11 +850,11 @@ export default {
         switch (code) {
           case 200:
 						uni.showToast({
-							title: '挂机成功，请15秒后查询挂机状态',
+							title: '挂机成功',
 							duration: 2000,
 							icon: 'none'
 						})
-            this.handleGuajiStatus()
+						this.handleGuajiStatus()
             break
           case 300:
 						uni.showToast({
@@ -888,6 +862,10 @@ export default {
 							duration: 2000,
 							icon: 'none'
 						})
+						const self = this
+						setTimeout(function() {
+							self.handleGuajiStatus()
+						}, 15000)
             break
           case 403:
 						uni.showToast({
@@ -897,10 +875,6 @@ export default {
 						})
             break
         }
-        const self = this
-        setTimeout(function() {
-          self.handleGuajiStatus()
-        }, 15000)
       })
     },
 
@@ -915,12 +889,12 @@ export default {
         const code = res.code
         switch (code) {
           case 200:
-            this.handleGuajiStatus()
 						uni.showToast({
 							title: '停止挂机成功',
 							duration: 2000,
 							icon: 'none'
 						})
+						this.handleGuajiStatus()
             break
           case 403:
 						uni.showToast({
