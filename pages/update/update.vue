@@ -1,7 +1,6 @@
 <template>
   <view class="content">
     <view class="summary-wrap">
-        <!-- <view v-if="hasNewVersion" class="highlight">有新版本，请下载新的版本安装，当前版本为V{{ $global.fuzhuVersionName }}</view> -->
         <view v-if="showUpdate">
           <button type="primary" plain="true" size="mini" @tap="handleUpdate">更新</button>
 				  <text style="width: 10upx; display: inline-block;"></text>
@@ -10,32 +9,35 @@
         <view>当前版本为V{{ $global.fuzhuVersionName }}</view>
 				<view>更新说明：</view>
         <view class="summary-content">
-          <view v-for="(item, index) in utils.updateDescription" :key="index">{{ item }}</view>
+          <view v-for="(item, index) in update.updateDescription" :key="index">{{ item }}</view>
         </view>
 
        <view style="margin-top:10px; color:#1989fa;">
-          <a v-if="saleChannel==='1'" :href="utils.apkDownloadUrl1">
+          <a v-if="saleChannel==='test'" :href="update.pkgUrl">
             <text>点击下载辅助APP</text>
           </a>
-          <a v-if="saleChannel==='2'" :href="utils.apkDownloadUrl2">
+          <a v-if="saleChannel==='1'" :href="update.pkgUrl1">
             <text>点击下载辅助APP</text>
           </a>
-          <a v-if="saleChannel==='3'" :href="utils.apkDownloadUrl3">
+          <a v-if="saleChannel==='2'" :href="update.pkgUrl2">
             <text>点击下载辅助APP</text>
           </a>
-          <a v-if="saleChannel==='4'" :href="utils.apkDownloadUrl4">
+          <a v-if="saleChannel==='3'" :href="update.pkgUrl3">
             <text>点击下载辅助APP</text>
           </a>
-					<a v-if="saleChannel==='5'" :href="utils.apkDownloadUrl5">
+          <a v-if="saleChannel==='4'" :href="update.pkgUrl4">
+            <text>点击下载辅助APP</text>
+          </a>
+					<a v-if="saleChannel==='5'" :href="update.pkgUrl5">
 					  <text>点击下载辅助APP</text>
 					</a>
-          <a v-if="saleChannel==='6'" :href="utils.apkDownloadUrl6">
+          <a v-if="saleChannel==='6'" :href="update.pkgUrl6">
             <text>点击下载辅助APP</text>
           </a>
-          <a v-if="saleChannel==='7'" :href="utils.apkDownloadUrl7">
+          <a v-if="saleChannel==='7'" :href="update.pkgUrl7">
             <text>点击下载辅助APP</text>
           </a>
-          <a v-if="saleChannel==='8'" :href="utils.apkDownloadUrl8">
+          <a v-if="saleChannel==='8'" :href="update.pkgUrl8">
             <text>点击下载辅助APP</text>
           </a>
           <!-- <button type="primary" @tap="downloadImage">下载</button> -->
@@ -45,41 +47,34 @@
 </template>
 
 <script>
-import { getUtils, getUpdate } from '@/api/game'
+import { getUpdate } from '@/api/game'
 import { getChannel } from '@/utils/index'
 export default {
   data() {
     return {
       saleChannel: '',
-      utils: '',
+      update: '',
       showUpdate: false
     }
   },
   onLoad() {
     this.saleChannel = getChannel()
-    this.handleGetUtils()
+    this.handleGetUpdate()
   },
 
   onPullDownRefresh() {
-      console.log('refresh');
       this.showUpdate = true
       setTimeout(function () {
           uni.stopPullDownRefresh();
       }, 1000);
   },
 
-  computed: {
-    hasNewVersion() {
-      const newVersion = this.utils.version
-      const currentVersion = this.$global.fuzhuVersion
-      return newVersion > currentVersion
-    }
-  },
+  computed: {},
 
   methods: {
-    handleGetUtils() {
-      getUtils().then(res => {
-        this.utils = res
+    handleGetUpdate() {
+      getUpdate().then(res => {
+        this.update = res
       }).catch(err => {
         console.log(err)
       })
@@ -91,7 +86,7 @@ export default {
 			})
 			var self = this
 			uni.downloadFile({
-				url: this.utils.apkDownloadUrl,
+				url: this.update.pkgUrl,
 				success: (res) => {
 					console.log('downloadFile success, res is', res)
 					self.imageSrc = res.tempFilePath;

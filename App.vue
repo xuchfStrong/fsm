@@ -17,7 +17,9 @@
 						var wgtUrl = ''
 						var pkgUrl = ''
 						wgtUrl = data.wgtUrl
-						if (saleChannel === '1') {
+						if (saleChannel === 'test') {
+							pkgUrl = data.pkgUrl
+						} else if (saleChannel === '1') {
 							pkgUrl = data.pkgUrl1
 						} else if (saleChannel === '2') {
 							pkgUrl = data.pkgUrl2
@@ -117,7 +119,7 @@
 					if (res.viewConfigVersion > viewConfigLocalVersion) {
 						uni.showModal({ //提醒用户有功能更新
 							title: "更新提示",  
-							content: res.viewUpdateNote,    
+							content: "有功能更新，详情见辅助的更新页面。",    
 						})
 						this.handleGetViewConfig()
 					}
@@ -126,8 +128,8 @@
 			handleGetViewConfig() {
 				getViewConfig().then(res => {
 					if (res.version > this.$options.globalData.viewConfig.version) {
-						save.setViewConfigLocal(res)
 						this.$options.globalData.viewConfig = res
+						save.setViewConfigLocal(res)
 					}
 				})
 			}

@@ -1,69 +1,62 @@
 {
-  "version": 116,
+  "version": 100,
   "switchConfig": [
-    {"label": "自动升级聚灵池", "key": "is_shengji_lingchi"},
+    {"label": "自动升级掌天瓶", "key": "is_shengji_lingchi"},
     {"label": "自动招募", "key": "is_zhaomu"},
-    {"label": "自动炼丹", "key": "is_liandan"},
-    {"label": "自动炼器", "key": "is_lianqi"},
-    {"label": "自动练气主宰", "key": "is_lianqi_zhuzai"},
-    {"label": "自动妖帝来袭", "key": "is_yaodilaixi"},
-    {"label": "自动仙帝之路", "key": "is_xiandi_zhilu"},
-    {"label": "自动斗法", "key": "is_doufa"},
+    {"label": "自动镇妖塔", "key": "is_lianqi_zhuzai"},
+    {"label": "自动魔王袭击(VIP必做)", "key": "is_yaodilaixi"},
+    {"label": "自动夺权之争", "key": "is_xiandi_zhilu"},
+    {"label": "自动仙斗", "key": "is_doufa"},
     {"label": "自动日常", "key": "is_richang"},
-    {"label": "自动魔族降临", "key": "is_mozujianglin"},
-    {"label": "自动宗门禁地", "key": "is_zongmen_jindi"},
-    {"label": "22点后自动刷新完仙兽次数", "key": "is_auto_shenshou"},
-    {"label": "仙兽山挑战次数买满", "key": "is_goumai_tiaozhan"},
-    {"label": "仙兽山炼化次数逐次购买", "key": "is_goumai_lianhua"},
-    {"label": "自动寻仙问道", "key": "is_xunxian_wendao"}
+    {"label": "自动炼丹师修炼", "key": "is_liandan"},
+    {"label": "自动炼器师修炼", "key": "is_lianqi"},
+    {"label": "自动神魔试炼", "key": "is_mozujianglin"},
+    {"label": "自动仙盟秘境", "key": "is_zongmen_jindi"},
+    {"label": "自动仙盟战(VIP有效)", "key": "is_zongmenzhan"}
   ],
   "pickerSwitchConfig": [
-    {"label": "自动历练", "key": "lilian_type"},
-    {"label": "自动宗门建设", "key": "zongmen_jianshe_type"},
+    {"label": "自动云游", "key": "lilian_type"},
+    {"label": "自动仙盟建设", "key": "zongmen_jianshe_type"},
     {"label": "自动开采遗迹", "key": "caiji_require_id"},
-    {"label": "决战魔殿", "key": "moyu_type"},
-    {"label": "自动抢主宰空位", "key": "bazhukongwei"},
-    {"label": "炼化仙兽1", "key": "shenshou_id1"},
-    {"label": "炼化仙兽2", "key": "shenshou_id2"},
-    {"label": "炼化仙兽3", "key": "shenshou_id3"},
-    {"label": "炼化仙兽4", "key": "shenshou_id4"}
+    {"label": "自动遗迹进攻", "key": "yiji_gongji_type"},
+    {"label": "自动决战魔殿", "key": "moyu_type"},
+    {"label": "自动抢塔主空位", "key": "bazhukongwei"},
+    {"label": "自动购买精炼石", "key": "buy_jinglianshi_type"}
   ],
   "gameInfoConfig": [
     {"label": "角色信息", "key": "roleInfoConfig"},
-    {"label": "任务信息", "key": "taskInfoConfig"}
+    {"label": "任务信息", "key": "taskInfoConfig"},
+    {"label": "灵脉争夺", "key": "weimianInfoConfig"}
   ],
   "roleInfoConfig": [
     {"label": "境界：", "key": "role_level"},
-    {"label": "仙帝排名：", "key": "xiandizhilu_pos"},
+    {"label": "夺权排名：", "key": "xiandizhilu_pos"},
     {"label": "VIP等级：", "key": "vip_level"},
     {"label": "战力：", "key": "zhanli"},
-    {"label": "炼气主宰：", "key": "zhuzai_level"},
-    {"label": "关卡通关：", "key": "guanqia"},
-    {"label": "仙缘：", "key": "xianyuan"},
-    {"label": "主宰层数：", "key": "bazhu_cengshu"},
+    {"label": "镇妖塔等级：", "key": "zhuzai_level"},
+    {"label": "通关层数：", "key": "guanqia"},
+    {"label": "仙玉：", "key": "xianyuan"},
+    {"label": "塔主层数：", "key": "bazhu_cengshu"},
     {"label": "登录天数：", "key": "login_days"},
     {"label": "修为：", "key": "xiuwei"},
-    {"label": "灵币：", "key": "lingbi"}
+    {"label": "铜贝：", "key": "lingbi"}
   ],
   "taskInfoConfig": [
-    {"label": "魔族降临：", "key": "mozujianglin_times"},
+    {"label": "神魔试炼：", "key": "mozujianglin_times"},
     {"label": "遗迹开采：", "key": "yijikaicai_times"},
     {"label": "遗迹进攻：", "key": "yijijingong_times"},
-    {"label": "仙帝次数：", "key": "xiandizhilu_times"},
-    {"label": "斗法次数：", "key": "doufa_times"},
-    {"label": "宗门建设：", "key": "zongmenjianshe_times"},
-    {"label": "宗门禁地：", "key": "zongmenjindi_times"},
-    {"label": "魔殿次数：", "key": "juezhanmodian_times"},
-    {"label": "仙兽炼化：", "key": "shenshou_lianhua_times"},
-    {"label": "历练食物：", "key": "lilianshiwu"},
-    {"label": "寻仙问道：", "key": "xunxian_wendao_times"},
-    {"label": "仙兽挑战：", "key": "shenshou_tiaozhan_times"}
+    {"label": "夺权次数：", "key": "xiandizhilu_times"},
+    {"label": "仙斗次数：", "key": "doufa_times"},
+    {"label": "仙盟建设：", "key": "zongmenjianshe_times"},
+    {"label": "仙盟秘境：", "key": "zongmenjindi_times"},
+    {"label": "魔神降临：", "key": "juezhanmodian_times"},
+    {"label": "云游食物：", "key": "lilianshiwu"}
   ],
   "weimianInfoConfig": [
     {"label": "兵力：", "key": "weimian_bingli"},
     {"label": "攻击令：", "key": "weimian_gongjiling"},
     {"label": "食物：", "key": "weimian_shiwu"},
-    {"label": "位置：", "key": "weimian_weizhi"}
+    {"label": "位置：", "key": "weimian_weizhi", "columnSize": 1}
   ],
   "gongfaConfig": [
     {"label": "攻击", "key": "gongji"},
@@ -82,7 +75,6 @@
     "juexue": 0
   },
   "configInfoDefault": {
-    "gongfagoumai": "",
     "lixianbeishu": 1,
     "is_shengji_lingchi": 0,
     "is_zhaomu": 1,
@@ -107,7 +99,14 @@
     "shenshou_id1": 0,
     "shenshou_id2": 0,
     "shenshou_id3": 0,
-    "shenshou_id4": 0
+    "shenshou_id4": 0,
+    "is_zongmenzhan": 0,
+    "gongfagoumai":"101010101010",
+    "yiji_gongji_type": 0,
+    "liandan_type": 0,
+    "is_kuafu_xianyu": 0,
+    "is_buy_kill_times": 0,
+    "buy_jinglianshi_type": 0
   },
   "roleInfoDefault": {
     "userid": "",
@@ -138,30 +137,35 @@
     "shenshou_lianhua_times": "",
     "shenshou_tiaozhan_times": "",
     "lilianshiwu": "",
-    "xunxian_wendao_times": ""
+    "xunxian_wendao_times": "",
+    "weimian_weizhi": "",
+    "weimian_bingli": "",
+    "weimian_gongjiling": "",
+    "weimian_shiwu": ""
   },
   "options": {
     "lilian_type": [
-      {"value": 0,"text": "关闭自动历练"},
-      {"value": 1,"text": "赤炎山"},
-      {"value": 2,"text": "星月楼"},
-      {"value": 3,"text": "天书碑"},
-      {"value": 4,"text": "天元道"},
-      {"value": 5,"text": "金乌观"},
-      {"value": 6,"text": "玄玉门"},
-      {"value": 7,"text": "雷音界"},
-      {"value": 8,"text": "惊龙渊"},
-      {"value": 9,"text": "无影谷"},
-      {"value": 10,"text": "青云崖"},
-      {"value": 11,"text": "玉女山"},
-      {"value": 12,"text": "赤炎谷"},
-      {"value": 13,"text": "黑龙山"},
-      {"value": 14,"text": "望龙谷"},
-      {"value": 15,"text": "盘龙道"},
-      {"value": 16,"text": "魔光界"}, 
-      {"value": 17,"text": "水云道"},
-      {"value": 18,"text": "星陨塔"},
-      {"value": 19,"text": "天罡城"} 
+      {"value": 0,"text": "关闭自动云游"},
+      {"value": 1,"text": "灵路"},
+      {"value": 2,"text": "北灵之原"},
+      {"value": 3,"text": "黑冥渊"},
+      {"value": 4,"text": "雷音山"},
+      {"value": 5,"text": "邙阴山脉"},
+      {"value": 6,"text": "术数山谷"},
+      {"value": 7,"text": "寒冰谷"},
+      {"value": 8,"text": "雷城"},
+      {"value": 9,"text": "北灵山"},
+      {"value": 10,"text": "碧血之丘"},
+      {"value": 11,"text": "上古万草原"},
+      {"value": 12,"text": "万剑谷"},
+      {"value": 13,"text": "魔尸宗"},
+      {"value": 14,"text": "大悲天"},
+      {"value": 15,"text": "摩天崖"},
+      {"value": 16,"text": "雷魔宗"},
+      {"value": 17,"text": "森罗殿"}, 
+      {"value": 18,"text": "万圣山"},
+      {"value": 19,"text": "遗迹大陆"},
+      {"value": 20,"text": "商之大陆"} 
     ],
     "zongmen_jianshe_type": [
       {"value": 0,"text": "关闭自动仙盟建设"},
@@ -174,24 +178,28 @@
       {"value": 1,"text": "采集最低要求白色"},
       {"value": 2,"text": " 采集最低要求蓝色"},
       {"value": 3,"text": " 采集最低要求紫色"},
-      {"value": 3,"text": " 采集最低要求橙色"}
+      {"value": 4,"text": " 采集最低要求橙色"},
+      {"value": 5,"text": "免费刷新一次"},
+      {"value": 6,"text": " 直接采集蓝色/100仙玉"},
+      {"value": 7,"text": " 直接采集紫色/150仙玉"},
+      {"value": 8,"text": " 直接采集橙色/200仙玉"}
     ],
     "moyu_type": [
       {"value": 0,"text": "关闭自动决战魔殿"},
-      {"value": 1,"text": "魔族屠夫"},
-      {"value": 2,"text": "魔族夫人"},
-      {"value": 3,"text": "魔族统领"}, 
-      {"value": 4,"text": "魔族将军"},
-      {"value": 5,"text": "魔族大王"},
-      {"value": 6,"text": "魔族战神"},
-      {"value": 7,"text": "魔族魔神"},
-      {"value": 8,"text": "魔族圣女"},
-      {"value": 9,"text": "魔族圣王"},
-      {"value": 10,"text": "魔族圣帝"},
-      {"value": 11,"text": "魔族老祖"}
+      {"value": 1,"text": "地狱屠夫"},
+      {"value": 2,"text": " 地狱夫人"},
+      {"value": 3,"text": " 地狱统领"}, 
+      {"value": 4,"text": " 地狱将军"},
+      {"value": 5,"text": "地狱大王"},
+      {"value": 6,"text": "地狱战神"},
+      {"value": 7,"text": "地狱魔神"},
+      {"value": 8,"text": "地狱圣女"},
+      {"value": 9,"text": "地狱圣王"},
+      {"value": 10,"text": "地狱圣帝"},
+      {"value": 11,"text": "地狱老祖"}
     ],
     "bazhukongwei":[
-      {"value":0,"text":"关闭主宰抢空位"},
+      {"value":0,"text":"关闭镇妖塔抢空位"},
       {"value":1,"text":"自动抢150层以上空位"},
       {"value":2,"text":"自动抢100层以上空位"},
       {"value":3,"text":"自动抢50层以上空位"},
@@ -244,7 +252,8 @@
       {"value":43,"text":"风雷巨鳄-lv6(36层以上)"},
       {"value":44,"text":"深海龙蛟-lv6(36层以上)"},
       {"value":45,"text":"[橙色]重明鸟-lv6(36层以上)"},
-      {"value":46,"text":"[橙色]黑羽文兽-lv6(36层以上)"}
+      {"value":46,"text":"[橙色]黑羽文兽-lv6(36层以上)"},
+			{"value":47,"text":"紫色全炼"}
     ],
     "shenshou_id2":[
       {"value":0,"text":"关闭仙兽自动炼化"},
@@ -293,7 +302,8 @@
       {"value":43,"text":"风雷巨鳄-lv6(36层以上)"},
       {"value":44,"text":"深海龙蛟-lv6(36层以上)"},
       {"value":45,"text":"[橙色]重明鸟-lv6(36层以上)"},
-      {"value":46,"text":"[橙色]黑羽文兽-lv6(36层以上)"}
+      {"value":46,"text":"[橙色]黑羽文兽-lv6(36层以上)"},
+			{"value":47,"text":"紫色全炼"}
     ],
     "shenshou_id3":[
       {"value":0,"text":"关闭仙兽自动炼化"},
@@ -342,7 +352,8 @@
       {"value":43,"text":"风雷巨鳄-lv6(36层以上)"},
       {"value":44,"text":"深海龙蛟-lv6(36层以上)"},
       {"value":45,"text":"[橙色]重明鸟-lv6(36层以上)"},
-      {"value":46,"text":"[橙色]黑羽文兽-lv6(36层以上)"}
+      {"value":46,"text":"[橙色]黑羽文兽-lv6(36层以上)"},
+			{"value":47,"text":"紫色全炼"}
     ],
     "shenshou_id4":[
       {"value":0,"text":"关闭仙兽自动炼化"},
@@ -391,7 +402,62 @@
       {"value":43,"text":"风雷巨鳄-lv6(36层以上)"},
       {"value":44,"text":"深海龙蛟-lv6(36层以上)"},
       {"value":45,"text":"[橙色]重明鸟-lv6(36层以上)"},
-      {"value":46,"text":"[橙色]黑羽文兽-lv6(36层以上)"}
+      {"value":46,"text":"[橙色]黑羽文兽-lv6(36层以上)"},
+			{"value":47,"text":"紫色全炼"}
+    ],
+    "yiji_gongji_type": [
+      {"value":0,"text":"关闭自动抢遗迹"},
+      {"value":1,"text":"抢非同仙盟蓝色/紫色遗迹"},
+      {"value":2,"text":" 抢非同仙盟紫色遗迹 "},
+      {"value":3,"text":"抢所有蓝色/紫色遗迹"},
+      {"value":4,"text":"抢所有紫色遗迹"},
+      {"value":1,"text":"抢非同仙盟绿色/蓝色/紫色遗迹"},
+      {"value":2,"text":" 抢所有绿色/蓝色/紫色遗迹 "}
+    ],
+    "gongfa": [
+      {"value":"10","text":"关闭功法商店购买"},
+      {"value":"11","text":"购买1000灵液及以下"},
+      {"value":"12","text":"购买2600灵液及以下"},
+      {"value":"13","text":"购买6760灵液及以下"},
+      {"value":"14","text":"购买17576灵液及以下"},
+      {"value":"15","text":"购买45698灵液及以下"},
+      {"value":"16","text":"购买118800灵液及以下"},
+      {"value":"17","text":"购买308900灵液及以下"},
+      {"value":"18","text":"购买803181灵液及以下"},
+      {"value":"19","text":"购买2088271灵液及以下"},
+      {"value":"20","text":"购买5429504灵液及以下"},
+      {"value":"21","text":"购买14116700灵液及以下"},
+      {"value":"22","text":"购买36703445灵液及以下"}
+    ],
+    "liandan_type":[
+      {"value":0,"text":"关闭自动炼渡劫丹"},
+      {"value":1,"text":" 自动炼制筑基期渡劫丹"},
+      {"value":2,"text":" 自动炼制金丹期渡劫丹"},
+      {"value":3,"text":" 自动炼制元婴期渡劫丹"},
+      {"value":4,"text":" 自动炼制化神期渡劫丹"},
+      {"value":5,"text":" 自动炼制炼虚期渡劫丹"},
+      {"value":6,"text":" 自动炼制合体期渡劫丹"},  
+      {"value":7,"text":" 自动炼制修炼期渡劫丹"},
+      {"value":8,"text":" 自动炼制大乘期渡劫丹"},
+      {"value":9,"text":" 自动炼制半仙期渡劫丹"},
+      {"value":10,"text":" 自动炼制人仙期渡劫丹"},
+      {"value":11,"text":" 自动炼制地仙期渡劫丹"},
+      {"value":12,"text":" 自动炼制天仙期渡劫丹"},
+      {"value":13,"text":" 自动炼制金仙期渡劫丹"},  
+      {"value":14,"text":" 自动炼制太乙散仙渡劫丹"},
+      {"value":15,"text":" 自动炼制太乙真仙渡劫丹"},
+      {"value":16,"text":" 自动炼制太乙金仙渡劫丹"},
+      {"value":17,"text":" 自动炼制大罗散仙渡劫丹"},
+      {"value":18,"text":" 自动炼制大罗真仙渡劫丹"}
+    ],
+    "buy_jinglianshi_type":[
+      {"value":0,"text":"关闭自动购买精炼石"},
+      {"value":1,"text":"超过5亿铜贝自动购买"},
+      {"value":2,"text":"超过10亿铜贝自动购买"},
+      {"value":3,"text":"超过15亿铜贝自动购买"},
+      {"value":4,"text":"超过20亿铜贝自动购买"},
+      {"value":5,"text":"超过50亿铜贝自动购买"},
+      {"value":6,"text":"超过100亿铜贝自动购买"}
     ]
   }
 }

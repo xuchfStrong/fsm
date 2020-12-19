@@ -57,11 +57,13 @@
 		</view>
 
 		<text v-if="utils.showCommon" class="waring-wrap">{{ utils.common }}</text>
-		<text v-if="utils.showContact0&&saleChannel === '0'" class="waring-wrap">{{ utils.contact0 }}</text>
+		<text v-if="utils.showContact&&saleChannel === 'test'" class="waring-wrap">{{ utils.contact }}</text>
 		<text v-if="utils.showContact1&&saleChannel === '1'" class="waring-wrap">{{ utils.contact1 }}</text>
 		<text v-if="utils.showContact2&&saleChannel === '2'" class="waring-wrap">{{ utils.contact2 }}</text>
 		<text v-if="utils.showContact3&&saleChannel === '3'" class="waring-wrap">{{ utils.contact3 }}</text>
 		<text v-if="utils.showContact4&&saleChannel === '4'" class="waring-wrap">{{ utils.contact4 }}</text>
+		<text v-if="utils.showContact5&&saleChannel === '5'" class="waring-wrap">{{ utils.contact5 }}</text>
+		<text v-if="utils.showContact6&&saleChannel === '6'" class="waring-wrap">{{ utils.contact6 }}</text>
 		<text v-if="utils.showContact7&&saleChannel === '7'" class="waring-wrap">{{ utils.contact7 }}</text>
 		<text v-if="utils.showContact8&&saleChannel === '8'" class="waring-wrap">{{ utils.contact8 }}</text>
 		
@@ -462,7 +464,7 @@ export default {
 		// 读取记住的登录信息
 		loadLoginInfo() {
 			uni.setNavigationBarTitle({
-					title: '极道仙尊火箭辅助V' + this.$global.fuzhuVersionName
+					title: '封天神魔火箭辅助V' + this.$global.fuzhuVersionName
 			});
 			this.roleList = save.getRoleList()
 			const gameLoginInfo = save.getGameLoginInfo()

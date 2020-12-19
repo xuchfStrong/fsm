@@ -139,7 +139,7 @@ export default {
 				uname: this.userInfo.usernamePlatForm,
 				upwd: this.userInfo.passwordPlatForm,
 				login_type: this.userInfo.loginType,
-				youxi_name: 'jdxz'
+				youxi_name: 'ftsm'
 			}
 			loginFuzhu(params).then(res => {
 				if (res.code === 200) {
